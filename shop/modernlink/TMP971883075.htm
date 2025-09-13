@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<script language="JavaScript">
+<!--
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+
+<STYLE TYPE="text/css">
+<!--
+BODY {OVERFLOW:scroll;OVERFLOW-X:hidden}
+.DEK {POSITION:absolute;VISIBILITY:hidden;Z-INDEX:200;}
+//-->
+</STYLE>
+
+</head>
+
+<body bgcolor="#FFFFFF" background="img/bg.gif">
+<table width="725" border="0" cellspacing="0" cellpadding="0" height="290">
+  <tr>
+    <td height="139" width="588"><img src="img/temp.gif" width="525" height="89" usemap="#a" border="0"><map name="a"><area shape="rect" coords="92,32,117,57" href="#" ONMOUSEOVER="popup('<img src=img/jacobsen.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="182,31,207,57" href="#" ONMOUSEOVER="popup('<img src=img/2001player.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="242,2,267,27" href="#" ONMOUSEOVER="popup('<img src=img/2001player.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="212,32,237,57" href="#" ONMOUSEOVER="popup('<img src=img/cone.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="61,62,86,88" href="#" ONMOUSEOVER="popup('<img src=img/tv.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="31,62,56,89" href="#" ONMOUSEOVER="popup('<img src=img/tv.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="92,62,116,88" href="#" ONMOUSEOVER="popup('<img src=img/candel.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="242,32,267,57" href="#" ONMOUSEOVER="popup('<img src=img/acc.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="182,1,208,27" href="#" ONMOUSEOVER="popup('<img src=img/poster.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="212,2,238,27" href="#" ONMOUSEOVER="popup('<img src=img/swan.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="2,62,26,88" href="#" ONMOUSEOVER="popup('<img src=img/acc.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="31,32,57,58" href="#" ONMOUSEOVER="popup('<img src=img/light.jpg>','black')"; ONMOUSEOUT="kill()"><area shape="rect" coords="166,64,523,87" href="#" ONMOUSEOVER="popup('<img src=img/ml.jpg>','black')"; ONMOUSEOUT="kill()"></map></td>
+    <td height="139" width="152">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="588">&nbsp;</td>
+    <td width="152">
+      <div align="center"><a href="#" onClick="MM_openBrWindow('map.htm','modernlink','width=415,height=220')"><img src="img/phone.gif" width="78" height="120" border="0"></a></div>
+    </td>
+  </tr>
+</table>
+
+<DIV ID="dek" CLASS="dek"></DIV>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+
+/*
+Pop up information box II (Mike McGrath (mike_mcgrath@lineone.net,  http://website.lineone.net/~mike_mcgrath))
+Permission granted to Dynamicdrive.com to include script in archive
+For this and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+Xoffset=-11;    // modify these values to ...
+Yoffset=20;    // change the popup position.
+
+var nav,old,iex=(document.all),yyy=-1000;
+if(navigator.appName=="Netscape"){(document.layers)?nav=true:old=true;}
+
+if(!old){
+var skn=(nav)?document.dek:dek.style;
+if(nav)document.captureEvents(Event.MOUSEMOVE);
+document.onmousemove=get_mouse;
+}
+
+function popup(msg,bak){
+var content="<TABLE  WIDTH=80 BORDER=0 BORDERCOLOR=black CELLPADDING=1 CELLSPACING=0 "+
+"BGCOLOR=#990000"+bak+"><TD ALIGN=center><FONT COLOR=black SIZE=2>"+msg+"</FONT></TD></TABLE>";
+if(old){alert(msg);return;} 
+else{yyy=Yoffset;
+ if(nav){skn.document.write(content);skn.document.close();skn.visibility="visible"}
+ if(iex){document.all("dek").innerHTML=content;skn.visibility="visible"}
+ }
+}
+
+function get_mouse(e){
+var x=(nav)?e.pageX:event.x+document.body.scrollLeft;skn.left=x+Xoffset;
+var y=(nav)?e.pageY:event.y+document.body.scrollTop;skn.top=y+yyy;
+}
+
+function kill(){
+if(!old){yyy=-1000;skn.visibility="hidden";}
+}
+
+//-->
+</SCRIPT>
+
+</body>
+</html>
